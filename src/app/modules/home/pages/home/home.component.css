@@ -5,9 +5,3 @@
 .tag-pill{
   cursor:pointer;
 }
-
-.items {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}

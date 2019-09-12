@@ -4,22 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomeModule } from './modules';
 import { CoreModule } from './core/core.module';
-import { HeaderComponent, FooterComponent } from './shared';
+import { SharedModule } from './shared';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent
+    AppComponent
   ],
   imports: [
     FlexLayoutModule,
     BrowserModule,
     CoreModule,
-    AppRoutingModule,
-    HomeModule
+    SharedModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
